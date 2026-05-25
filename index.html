@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="p-5">
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">🍔 Burger Town</a>
+      <div class="collapse navbar-collapse" id="menu">
+        <div class="btn-group ms-auto" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn custom-btn">Main</button>
+          <button type="button" class="btn custom-btn">Menu</button>
+          <button type="button" class="btn custom-btn">Promotions</button>
+          <button type="button" class="btn custom-btn">Contact</button>
+          <button type="button" class="btn custom-btn"> Cart 🛒
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              2+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+        </div
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <section class="bg-dark text-light text-center py-5">
+    <div class="container">
+
+      <h1 class="display-3 fw-bold"><strong>The best burgers </strong>  🍟</h1>
+      <p class="lead mt-3">  Its flavor is incredible, Fresh ingredients and fast delivery.</p>
+      <div class="alert alert-info d-none" role="alert" id="liveAlert">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <button class="btn btn-warning btn-lg mt-3" id="liveAlertBtn" type="button">
+        Order Now
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="py-5">
+    <div class="container">
+
+      <h2 class="text-center mb-5">
+        Our Menu
+      </h2>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" 
+              class="card-img-top" 
+              alt="burger"
+            >
+            <div class="card-body text-center">
+              <h4 class="card-title"> Clasic Burger</h4>
+              <p class="card-text"> Premium beef, cheddar cheese and fresh vegetables.</p>
+              <button class="btn btn-dark"> Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" 
+              class="card-img-top" 
+              alt="Hamburguesa"
+            >
+
+            <div class="card-body text-center">
+              <h4 class="card-title">  BBQ burger</h4>
+              <p class="card-text">  BBQ sauce, crispy bacon and double meat.</p>
+              <button class="btn btn-dark">  Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add" 
+              class="card-img-top"
+              alt="Hamburguesa"
+            >
+            <div class="card-body text-center">
+              <h4 class="card-title">  Special Burger</h4>
+              <p class="card-text">Special hamburger with fries and a drink included.</p>
+              <button class="btn btn-dark">  Buy</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-4">
+    <p class="mb-0">
+      © 2026 Burger Town - All rights reserved
+    </p>
+  </footer>
+
+  <script>
+    const alertBtn = document.getElementById('liveAlertBtn');
+    const alertBox = document.getElementById('liveAlert');
+
+    alertBtn.addEventListener('click', () => {
+      alertBox.classList.toggle('d-none');
+    });
+  </script>
+</body>
+
+</html>
