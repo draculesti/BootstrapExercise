@@ -27,10 +27,12 @@ This project was developed to practice responsive design, Bootstrap components, 
 ## 📸 Preview
 
 ### Home Section
-![Burger Town Home](./9210b9fb-75dd-4eb5-aea0-b88ddb7b3be8.png)
+<img width="1775" height="658" alt="image" src="https://github.com/user-attachments/assets/9a9d770e-7abc-4032-9043-eb76238d23b8" />
+
 
 ### Menu Section
-![Burger Town Menu](./c5c325bf-04a0-453b-afaa-ed8ca9d4c35e.png)
+<img width="1711" height="1226" alt="image" src="https://github.com/user-attachments/assets/f73c6221-e137-4204-abd6-6480fbe9420d" />
+
 
 ---
 
